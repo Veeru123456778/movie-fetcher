@@ -9,7 +9,7 @@ function Display() {
   const handleSearchTitle = async () => {
     setError(null); 
     try {
-      const response = await axios.get('http://localhost:3000/api/movies', {
+      const response = await axios.get('https://movie-server-tau.vercel.app/api/movies', {
         params: {
           title: searchTitle || null,
         },
